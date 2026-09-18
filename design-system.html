@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Design System del portafolio de Aaron Alejandro Bayas Caicedo — Paleta de colores, tipografía, espaciado y componentes reutilizables.">
+  <title>Design System | Aaron Bayas</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Devicon -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER / NAVBAR
+       ============================================ -->
+  <header class="navbar scrolled" id="navbar">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a href="index.html" class="nav-logo" aria-label="Volver al portafolio">AB</a>
+
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="index.html#inicio" class="nav-link" role="menuitem">Inicio</a></li>
+        <li role="none"><a href="index.html#sobre-mi" class="nav-link" role="menuitem">Sobre mí</a></li>
+        <li role="none"><a href="index.html#habilidades" class="nav-link" role="menuitem">Habilidades</a></li>
+        <li role="none"><a href="index.html#proyectos" class="nav-link" role="menuitem">Proyectos</a></li>
+        <li role="none"><a href="design-system.html" class="nav-link active" role="menuitem">Design System</a></li>
+        <li role="none"><a href="index.html#contacto" class="nav-link" role="menuitem">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema claro/oscuro">
+          <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================================
+       MAIN — DESIGN SYSTEM
+       ============================================ -->
+  <main class="ds-page">
+    <div class="container">
+
+      <!-- Page Header -->
+      <section class="section">
+        <div class="section__header">
+          <h1 class="section__title">Design System</h1>
+          <p class="section__subtitle">Documentación visual de las decisiones de diseño y componentes reutilizables del portafolio</p>
+        </div>
+      </section>
+
+      <!-- ========== COLORES ========== -->
+      <section class="ds-section" id="ds-colores">
+        <h2 class="ds-section__title">Colores</h2>
+        <h3 style="margin-bottom: var(--space-lg); color: var(--color-text-muted); font-size: var(--fs-md);">Colores Primarios</h3>
+        <div class="ds-colors" style="margin-bottom: var(--space-2xl);">
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #2563eb;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Primary</p>
+              <p class="ds-color-swatch__value">#2563eb</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #3b82f6;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Primary Light</p>
+              <p class="ds-color-swatch__value">#3b82f6</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #1d4ed8;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Primary Dark</p>
+              <p class="ds-color-swatch__value">#1d4ed8</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #7c3aed;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Secondary</p>
+              <p class="ds-color-swatch__value">#7c3aed</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #8b5cf6;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Secondary Light</p>
+              <p class="ds-color-swatch__value">#8b5cf6</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #06b6d4;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Accent</p>
+              <p class="ds-color-swatch__value">#06b6d4</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #22d3ee;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Accent Light</p>
+              <p class="ds-color-swatch__value">#22d3ee</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="margin-bottom: var(--space-lg); color: var(--color-text-muted); font-size: var(--fs-md);">Colores de Tema (Dark)</h3>
+        <div class="ds-colors" style="margin-bottom: var(--space-2xl);">
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #0f172a;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Background</p>
+              <p class="ds-color-swatch__value">#0f172a</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #1e293b;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Surface</p>
+              <p class="ds-color-swatch__value">#1e293b</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #334155;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Surface Hover</p>
+              <p class="ds-color-swatch__value">#334155</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #f1f5f9; border: 1px solid #334155;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Text</p>
+              <p class="ds-color-swatch__value">#f1f5f9</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #94a3b8;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Text Muted</p>
+              <p class="ds-color-swatch__value">#94a3b8</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="margin-bottom: var(--space-lg); color: var(--color-text-muted); font-size: var(--fs-md);">Colores Semánticos</h3>
+        <div class="ds-colors">
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #10b981;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Success</p>
+              <p class="ds-color-swatch__value">#10b981</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #ef4444;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Error</p>
+              <p class="ds-color-swatch__value">#ef4444</p>
+            </div>
+          </div>
+          <div class="ds-color-swatch">
+            <div class="ds-color-swatch__preview" style="background-color: #f59e0b;"></div>
+            <div class="ds-color-swatch__info">
+              <p class="ds-color-swatch__name">Warning</p>
+              <p class="ds-color-swatch__value">#f59e0b</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== TIPOGRAFÍA ========== -->
+      <section class="ds-section" id="ds-tipografia">
+        <h2 class="ds-section__title">Tipografía</h2>
+        <div class="ds-typography">
+          <div class="ds-type-example">
+            <p class="ds-type-label">h1 — Outfit, 4.5rem, ExtraBold</p>
+            <h1 style="font-size: var(--fs-5xl);">Heading 1</h1>
+          </div>
+          <div class="ds-type-example">
+            <p class="ds-type-label">h2 — Outfit, 2.5rem, Bold</p>
+            <h2 style="font-size: var(--fs-3xl);">Heading 2</h2>
+          </div>
+          <div class="ds-type-example">
+            <p class="ds-type-label">h3 — Outfit, 1.5rem, Bold</p>
+            <h3 style="font-size: var(--fs-xl);">Heading 3</h3>
+          </div>
+          <div class="ds-type-example">
+            <p class="ds-type-label">Párrafo — Inter, 1rem, Regular</p>
+            <p>Este es un ejemplo de párrafo con la tipografía Inter. Se utiliza para el contenido principal del portafolio, descripciones de proyectos y secciones informativas.</p>
+          </div>
+          <div class="ds-type-example">
+            <p class="ds-type-label">Texto Secundario — Inter, 0.875rem, Muted</p>
+            <p class="text-muted">Este es un ejemplo de texto secundario o muted, utilizado para información complementaria y metadatos.</p>
+          </div>
+          <div class="ds-type-example">
+            <p class="ds-type-label">Texto Gradiente</p>
+            <h2 class="text-gradient" style="font-size: var(--fs-3xl);">Texto con Gradiente</h2>
+          </div>
+          <div class="ds-type-example">
+            <p class="ds-type-label">Enlaces</p>
+            <p>Visita mi <a href="#" style="color: var(--color-primary); text-decoration: underline;">enlace de ejemplo</a> para más información.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ESPACIADO ========== -->
+      <section class="ds-section" id="ds-espaciado">
+        <h2 class="ds-section__title">Espaciado</h2>
+        <div class="ds-spacing">
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-2xs: 0.125rem</span>
+            <div class="ds-spacing-bar" style="width: 2px;"></div>
+          </div>
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-xs: 0.25rem</span>
+            <div class="ds-spacing-bar" style="width: 4px;"></div>
+          </div>
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-sm: 0.5rem</span>
+            <div class="ds-spacing-bar" style="width: 8px;"></div>
+          </div>
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-md: 1rem</span>
+            <div class="ds-spacing-bar" style="width: 16px;"></div>
+          </div>
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-lg: 1.5rem</span>
+            <div class="ds-spacing-bar" style="width: 24px;"></div>
+          </div>
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-xl: 2rem</span>
+            <div class="ds-spacing-bar" style="width: 32px;"></div>
+          </div>
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-2xl: 3rem</span>
+            <div class="ds-spacing-bar" style="width: 48px;"></div>
+          </div>
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-3xl: 4rem</span>
+            <div class="ds-spacing-bar" style="width: 64px;"></div>
+          </div>
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-4xl: 6rem</span>
+            <div class="ds-spacing-bar" style="width: 96px;"></div>
+          </div>
+          <div class="ds-spacing-item">
+            <span class="ds-spacing-label">--space-5xl: 8rem</span>
+            <div class="ds-spacing-bar" style="width: 128px;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== BORDER RADIUS ========== -->
+      <section class="ds-section" id="ds-radius">
+        <h2 class="ds-section__title">Border Radius</h2>
+        <div class="ds-component-row" style="gap: var(--space-xl);">
+          <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: var(--radius-xs); margin-bottom: var(--space-sm);"></div>
+            <p class="text-muted">--radius-xs<br>0.25rem</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: var(--radius-sm); margin-bottom: var(--space-sm);"></div>
+            <p class="text-muted">--radius-sm<br>0.5rem</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: var(--radius-md); margin-bottom: var(--space-sm);"></div>
+            <p class="text-muted">--radius-md<br>0.75rem</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: var(--radius-lg); margin-bottom: var(--space-sm);"></div>
+            <p class="text-muted">--radius-lg<br>1rem</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: var(--radius-xl); margin-bottom: var(--space-sm);"></div>
+            <p class="text-muted">--radius-xl<br>1.5rem</p>
+          </div>
+          <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: var(--radius-full); margin-bottom: var(--space-sm);"></div>
+            <p class="text-muted">--radius-full<br>9999px</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== COMPONENTES ========== -->
+      <section class="ds-section" id="ds-componentes">
+        <h2 class="ds-section__title">Componentes</h2>
+        <div class="ds-components">
+
+          <!-- Botones -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Botones</h3>
+            <div class="ds-component-row">
+              <button class="btn btn--primary">
+                <i class="fa-solid fa-rocket" aria-hidden="true"></i> Botón Primario
+              </button>
+              <button class="btn btn--secondary">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i> Botón Secundario
+              </button>
+              <button class="btn btn--primary btn--sm">Pequeño</button>
+              <button class="btn btn--secondary btn--sm">Pequeño</button>
+            </div>
+          </div>
+
+          <!-- Skill Badges -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Skill Badges</h3>
+            <div class="ds-component-row">
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">TypeScript</span>
+              <span class="skill-badge">PostgreSQL</span>
+              <span class="skill-badge">Django</span>
+              <span class="skill-badge">Git</span>
+            </div>
+          </div>
+
+          <!-- Tech Tags -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Tech Tags (en tarjetas de proyecto)</h3>
+            <div class="ds-component-row">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">UI/UX</span>
+            </div>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Filtros de Proyecto</h3>
+            <div class="ds-component-row">
+              <button class="filter-btn active">Todos</button>
+              <button class="filter-btn">React</button>
+              <button class="filter-btn">TypeScript</button>
+              <button class="filter-btn">Python</button>
+            </div>
+          </div>
+
+          <!-- Skill Item con nivel -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Skill Item (con nivel)</h3>
+            <div style="max-width: 400px; display: flex; flex-direction: column; gap: var(--space-md);">
+              <div class="skill-item">
+                <div class="skill-item__info">
+                  <i class="devicon-javascript-plain colored" style="font-size: 1.25rem;"></i>
+                  <span class="skill-item__name">JavaScript</span>
+                </div>
+                <div class="skill-item__level" aria-label="Nivel 4 de 5">
+                  <span class="skill-item__dot filled"></span>
+                  <span class="skill-item__dot filled"></span>
+                  <span class="skill-item__dot filled"></span>
+                  <span class="skill-item__dot filled"></span>
+                  <span class="skill-item__dot"></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__info">
+                  <i class="devicon-python-plain colored" style="font-size: 1.25rem;"></i>
+                  <span class="skill-item__name">Python</span>
+                </div>
+                <div class="skill-item__level" aria-label="Nivel 3 de 5">
+                  <span class="skill-item__dot filled--secondary"></span>
+                  <span class="skill-item__dot filled--secondary"></span>
+                  <span class="skill-item__dot filled--secondary"></span>
+                  <span class="skill-item__dot"></span>
+                  <span class="skill-item__dot"></span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item__info">
+                  <i class="devicon-postgresql-plain colored" style="font-size: 1.25rem;"></i>
+                  <span class="skill-item__name">PostgreSQL</span>
+                </div>
+                <div class="skill-item__level" aria-label="Nivel 3 de 5">
+                  <span class="skill-item__dot filled--accent"></span>
+                  <span class="skill-item__dot filled--accent"></span>
+                  <span class="skill-item__dot filled--accent"></span>
+                  <span class="skill-item__dot"></span>
+                  <span class="skill-item__dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card de Proyecto -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Card de Proyecto</h3>
+            <div style="max-width: 400px;">
+              <article class="project-card" style="cursor: default;">
+                <figure class="project-card__image-wrapper">
+                  <img src="media/logo.png" alt="Ejemplo de card de proyecto" class="project-card__image" loading="lazy">
+                  <div class="project-card__overlay">
+                    <span class="project-card__overlay-btn">Ver detalles</span>
+                  </div>
+                </figure>
+                <div class="project-card__body">
+                  <h4 class="project-card__title">Nombre del Proyecto</h4>
+                  <p class="project-card__description">
+                    Descripción breve del proyecto que explica su propósito y funcionalidad principal.
+                  </p>
+                  <div class="project-card__techs">
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">React</span>
+                  </div>
+                  <div class="project-card__links">
+                    <a href="#" class="project-card__link">
+                      <i class="fa-solid fa-folder-open" aria-hidden="true"></i> Repositorio
+                    </a>
+                    <a href="#" class="project-card__link">
+                      <i class="fa-solid fa-globe" aria-hidden="true"></i> Demo
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Inputs y Textarea -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Inputs y Textarea</h3>
+            <div class="ds-component-row--vertical">
+              <div class="form-group">
+                <label for="ds-input-normal">Input Normal</label>
+                <input type="text" id="ds-input-normal" class="form-input" placeholder="Escribe algo...">
+              </div>
+              <div class="form-group">
+                <label for="ds-input-success">Input Válido</label>
+                <input type="text" id="ds-input-success" class="form-input success" value="Dato correcto">
+              </div>
+              <div class="form-group">
+                <label for="ds-input-error">Input con Error</label>
+                <input type="text" id="ds-input-error" class="form-input error" value="">
+                <span class="form-error visible">Este campo es requerido.</span>
+              </div>
+              <div class="form-group">
+                <label for="ds-textarea">Textarea</label>
+                <textarea id="ds-textarea" class="form-textarea" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sombras -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Sombras</h3>
+            <div class="ds-component-row" style="gap: var(--space-2xl);">
+              <div style="text-align: center;">
+                <div style="width: 120px; height: 80px; background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); margin-bottom: var(--space-sm);"></div>
+                <p class="text-muted">--shadow-sm</p>
+              </div>
+              <div style="text-align: center;">
+                <div style="width: 120px; height: 80px; background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: var(--space-sm);"></div>
+                <p class="text-muted">--shadow-md</p>
+              </div>
+              <div style="text-align: center;">
+                <div style="width: 120px; height: 80px; background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); margin-bottom: var(--space-sm);"></div>
+                <p class="text-muted">--shadow-lg</p>
+              </div>
+              <div style="text-align: center;">
+                <div style="width: 120px; height: 80px; background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-glow-primary); margin-bottom: var(--space-sm);"></div>
+                <p class="text-muted">--shadow-glow-primary</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navbar Preview -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Navbar</h3>
+            <p class="text-muted" style="margin-bottom: var(--space-md);">
+              El componente Navbar se encuentra en la parte superior de esta página y de la página principal. Incluye logo, enlaces de navegación, toggle de tema y menú hamburguesa en móvil. Al hacer scroll, adquiere efecto glassmorphism con <code style="background: var(--color-bg); padding: 0.15rem 0.4rem; border-radius: var(--radius-xs); font-size: var(--fs-sm);">backdrop-filter: blur(20px)</code>.
+            </p>
+          </div>
+
+          <!-- Timeline -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Timeline (Educación)</h3>
+            <div style="max-width: 500px;">
+              <div class="timeline">
+                <article class="timeline__item">
+                  <h4 class="timeline__institution">Institución de Ejemplo</h4>
+                  <p class="timeline__degree">Carrera o Título</p>
+                  <p class="timeline__detail">Detalle adicional</p>
+                </article>
+                <article class="timeline__item">
+                  <h4 class="timeline__institution">Otra Institución</h4>
+                  <p class="timeline__degree">Otro Título</p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Cards -->
+          <div class="ds-component-group">
+            <h3 class="ds-component-group__title">Stat Cards</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: var(--space-md); max-width: 100%;">
+              <div class="about__stat">
+                <span class="about__stat-number">6+</span>
+                <span class="about__stat-label">Proyectos</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number">8vo</span>
+                <span class="about__stat-label">Semestre</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number">5+</span>
+                <span class="about__stat-label">Tecnologías</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo" aria-label="Volver al portafolio">Aaron Bayas</a>
+        <div class="footer__divider" aria-hidden="true"></div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">&copy; 2024 Aaron Alejandro Bayas Caicedo. Todos los derechos reservados.</p>
+          <a href="index.html" class="footer__design-system-link">← Volver al Portafolio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Volver al inicio de la página">↑</button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

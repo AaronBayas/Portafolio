@@ -48,12 +48,12 @@ Este portafolio web ha sido desarrollado como proyecto académico para la asigna
 
 El portafolio implementa un sistema de diseño escalable y consistente basado en principios modernos de UI/UX:
 
-- **Colores Primarios:** Azul (`#2563eb`), Violeta (`#7c3aed`) y Cian (`#06b6d4`).
+- **Colores Primarios (4):** Azul (`#2563eb`), Azul Claro (`#3b82f6`), Violeta (`#7c3aed`) y Cian (`#06b6d4`).
+- **Colores de Tema (Dark) (4):** Fondo (`#0f172a`), Superficie (`#1e293b`), Texto (`#f1f5f9`) y Texto Secundario (`#94a3b8`).
 - **CSS Custom Properties:** Tokens centralizados para colores, tipografía, espaciado, radios de borde y sombras.
-- **Variables de Tema:** Variables de color intercambiables para transiciones perfectas entre modo oscuro y claro.
 - **Componentes Reutilizables:** Botones, tarjetas, insignias, inputs, líneas de tiempo y filtros estandarizados.
 
-La documentación visual completa está disponible en la página del [Design System](design-system.html).
+La documentación visual completa está disponible en la sección [Design System](#design-system).
 
 ---
 

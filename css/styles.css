@@ -69,25 +69,15 @@ select {
   /* === Colors — 3 Primary Colors === */
   --color-primary: #2563eb;
   --color-primary-light: #3b82f6;
-  --color-primary-dark: #1d4ed8;
-  --color-secondary: #7c3aed;
-  --color-secondary-light: #8b5cf6;
-  --color-secondary-dark: #6d28d9;
-  --color-accent: #06b6d4;
-  --color-accent-light: #22d3ee;
-  --color-accent-dark: #0891b2;
-
+    --color-secondary: #7c3aed;
+      --color-accent: #06b6d4;
+    
   /* === Theme Colors (Dark Default) === */
   --color-bg: #0f172a;
-  --color-bg-alt: #0c1222;
-  --color-surface: #1e293b;
-  --color-surface-hover: #334155;
-  --color-surface-border: rgba(255, 255, 255, 0.08);
-  --color-glass: rgba(30, 41, 59, 0.7);
-  --color-text: #f1f5f9;
+    --color-surface: #1e293b;
+        --color-text: #f1f5f9;
   --color-text-muted: #94a3b8;
-  --color-text-secondary: #cbd5e1;
-  --color-success: #10b981;
+    --color-success: #10b981;
   --color-error: #ef4444;
   --color-warning: #f59e0b;
 
@@ -98,7 +88,7 @@ select {
     radial-gradient(ellipse at 80% 20%, rgba(124, 58, 237, 0.12) 0%, transparent 50%),
     radial-gradient(ellipse at 60% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
     var(--color-bg);
-  --gradient-text: linear-gradient(135deg, var(--color-primary-light), var(--color-accent-light));
+  --gradient-text: linear-gradient(135deg, var(--color-primary-light), var(--color-accent));
 
   /* === Typography === */
   --font-heading: 'Outfit', sans-serif;
@@ -168,15 +158,10 @@ select {
 /* === Light Theme Override === */
 .light-theme {
   --color-bg: #ffffff;
-  --color-bg-alt: #f8fafc;
-  --color-surface: #f1f5f9;
-  --color-surface-hover: #e2e8f0;
-  --color-surface-border: rgba(0, 0, 0, 0.08);
-  --color-glass: rgba(241, 245, 249, 0.8);
-  --color-text: #0f172a;
+    --color-surface: #f1f5f9;
+        --color-text: #0f172a;
   --color-text-muted: #64748b;
-  --color-text-secondary: #475569;
-  --gradient-hero: radial-gradient(ellipse at 20% 50%, rgba(37, 99, 235, 0.08) 0%, transparent 50%),
+    --gradient-hero: radial-gradient(ellipse at 20% 50%, rgba(37, 99, 235, 0.08) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
     radial-gradient(ellipse at 60% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
     var(--color-bg);
@@ -233,7 +218,7 @@ h6 {
 p {
   font-size: var(--fs-base);
   line-height: var(--lh-relaxed);
-  color: var(--color-text-secondary);
+  color: var(--color-text-muted);
 }
 
 .text-muted {
@@ -337,7 +322,7 @@ p {
 .btn--secondary {
   background: transparent;
   color: var(--color-text);
-  border: 2px solid var(--color-surface-border);
+  border: 2px solid var(--color-text-muted);
   backdrop-filter: blur(8px);
 }
 
@@ -378,10 +363,10 @@ p {
 }
 
 .navbar.scrolled {
-  background: var(--color-glass);
+  background: var(--color-surface);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--color-surface-border);
+  border-bottom: 1px solid var(--color-text-muted);
   box-shadow: var(--shadow-md);
 }
 
@@ -456,7 +441,7 @@ p {
   font-size: var(--fs-lg);
   transition: all var(--transition-base);
   background: var(--color-surface);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
 }
 
 .theme-toggle:hover {
@@ -493,7 +478,7 @@ p {
   z-index: 1001;
   background: var(--color-surface);
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
 }
 
 .nav-toggle .hamburger-line {
@@ -655,7 +640,7 @@ p {
 
 .about__description {
   font-size: var(--fs-base);
-  color: var(--color-text-secondary);
+  color: var(--color-text-muted);
   line-height: var(--lh-relaxed);
 }
 
@@ -671,7 +656,7 @@ p {
   padding: var(--space-lg);
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   transition: all var(--transition-base);
 }
 
@@ -732,7 +717,7 @@ p {
   padding: var(--space-lg);
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   transition: all var(--transition-base);
 }
 
@@ -777,7 +762,7 @@ p {
    8. SKILLS SECTION
    =========================== */
 .skills {
-  background: var(--color-bg-alt);
+  background: var(--color-bg);
 }
 
 .skills__categories {
@@ -790,7 +775,7 @@ p {
   padding: var(--space-xl);
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   transition: all var(--transition-base);
 }
 
@@ -841,7 +826,7 @@ p {
 .skill-item__name {
   font-size: var(--fs-sm);
   font-weight: var(--fw-medium);
-  color: var(--color-text-secondary);
+  color: var(--color-text-muted);
 }
 
 .skill-item__level {
@@ -853,7 +838,7 @@ p {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--color-surface-hover);
+  background: var(--color-text-muted);
   transition: all var(--transition-base);
 }
 
@@ -879,11 +864,11 @@ p {
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-md);
   background: var(--color-surface);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   border-radius: var(--radius-full);
   font-size: var(--fs-sm);
   font-weight: var(--fw-medium);
-  color: var(--color-text-secondary);
+  color: var(--color-text-muted);
   transition: all var(--transition-base);
 }
 
@@ -910,7 +895,7 @@ p {
   font-weight: var(--fw-medium);
   color: var(--color-text-muted);
   background: var(--color-surface);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   border-radius: var(--radius-full);
   transition: all var(--transition-base);
   cursor: pointer;
@@ -938,7 +923,7 @@ p {
 .project-card {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   overflow: hidden;
   transition: all var(--transition-base);
   cursor: pointer;
@@ -955,7 +940,7 @@ p {
   position: relative;
   overflow: hidden;
   height: 220px;
-  background: var(--color-bg-alt);
+  background: var(--color-bg);
 }
 
 .project-card__image {
@@ -1044,7 +1029,7 @@ p {
   gap: var(--space-md);
   margin-top: var(--space-sm);
   padding-top: var(--space-md);
-  border-top: 1px solid var(--color-surface-border);
+  border-top: 1px solid var(--color-text-muted);
 }
 
 .project-card__link {
@@ -1070,7 +1055,7 @@ p {
    10. CONTACT SECTION
    =========================== */
 .contact {
-  background: var(--color-bg-alt);
+  background: var(--color-bg);
 }
 
 .contact__content {
@@ -1109,7 +1094,7 @@ p {
   padding: var(--space-lg);
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   transition: all var(--transition-base);
 }
 
@@ -1155,7 +1140,7 @@ p {
   padding: var(--space-2xl);
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
 }
 
 .form-group {
@@ -1178,7 +1163,7 @@ p {
 .form-textarea {
   padding: 0.75rem 1rem;
   background: var(--color-bg);
-  border: 2px solid var(--color-surface-border);
+  border: 2px solid var(--color-text-muted);
   border-radius: var(--radius-md);
   color: var(--color-text);
   font-size: var(--fs-base);
@@ -1238,7 +1223,7 @@ p {
    =========================== */
 .footer {
   padding: var(--space-3xl) 0 var(--space-xl);
-  border-top: 1px solid var(--color-surface-border);
+  border-top: 1px solid var(--color-text-muted);
 }
 
 .footer__content {
@@ -1288,7 +1273,7 @@ p {
   justify-content: center;
   border-radius: var(--radius-md);
   background: var(--color-surface);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   color: var(--color-text-muted);
   transition: all var(--transition-base);
   font-size: var(--fs-lg);
@@ -1304,7 +1289,7 @@ p {
 .footer__divider {
   width: 100%;
   height: 1px;
-  background: var(--color-surface-border);
+  background: var(--color-text-muted);
 }
 
 .footer__bottom {
@@ -1358,7 +1343,7 @@ p {
 .modal {
   background: var(--color-surface);
   border-radius: var(--radius-xl);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   max-width: 700px;
   width: 100%;
   max-height: 90vh;
@@ -1418,7 +1403,7 @@ p {
 }
 
 .modal__description {
-  color: var(--color-text-secondary);
+  color: var(--color-text-muted);
   line-height: var(--lh-relaxed);
 }
 
@@ -1568,7 +1553,7 @@ p {
 
 .ds-section {
   padding: var(--space-3xl) 0;
-  border-bottom: 1px solid var(--color-surface-border);
+  border-bottom: 1px solid var(--color-text-muted);
 }
 
 .ds-section:last-child {
@@ -1579,7 +1564,7 @@ p {
   font-size: var(--fs-2xl);
   margin-bottom: var(--space-2xl);
   padding-bottom: var(--space-md);
-  border-bottom: 2px solid var(--color-surface-border);
+  border-bottom: 2px solid var(--color-text-muted);
 }
 
 /* Color Swatches */
@@ -1592,7 +1577,7 @@ p {
 .ds-color-swatch {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
   transition: transform var(--transition-base);
 }
 
@@ -1633,7 +1618,7 @@ p {
   padding: var(--space-lg);
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
 }
 
 .ds-type-label {
@@ -1687,7 +1672,7 @@ p {
   padding: var(--space-2xl);
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-surface-border);
+  border: 1px solid var(--color-text-muted);
 }
 
 .ds-component-group__title {
@@ -1811,7 +1796,7 @@ p {
     padding: calc(var(--nav-height) + var(--space-xl)) var(--space-xl) var(--space-xl);
     gap: var(--space-xs);
     transition: right var(--transition-base);
-    border-left: 1px solid var(--color-surface-border);
+    border-left: 1px solid var(--color-text-muted);
     box-shadow: var(--shadow-xl);
     z-index: 999;
   }

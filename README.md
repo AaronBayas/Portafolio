@@ -105,4 +105,4 @@ El proyecto está configurado para ser desplegado y alojado a través de GitHub 
 
 ## Licencia
 
-Este proyecto fue desarrollado con fines académicos. © 2024 Aaron Alejandro Bayas Caicedo.
+Este proyecto fue desarrollado con fines académicos. © 2026 Aaron Alejandro Bayas Caicedo.

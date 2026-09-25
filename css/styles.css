@@ -18,7 +18,12 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
   font-size: 100%;
+}
+
+html, body {
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 body {
@@ -1753,8 +1758,14 @@ p {
     padding: var(--space-lg);
   }
 
-  .projects__grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  .projects__grid,
+  .skills__categories {
+    grid-template-columns: 1fr;
+  }
+
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(30px);
   }
 }
 
@@ -1787,7 +1798,8 @@ p {
   .nav-menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);
     width: 280px;
     height: 100vh;
     background: var(--color-surface);
@@ -1795,14 +1807,14 @@ p {
     align-items: flex-start;
     padding: calc(var(--nav-height) + var(--space-xl)) var(--space-xl) var(--space-xl);
     gap: var(--space-xs);
-    transition: right var(--transition-base);
+    transition: transform var(--transition-base);
     border-left: 1px solid var(--color-text-muted);
     box-shadow: var(--shadow-xl);
     z-index: 999;
   }
 
   .nav-menu.active {
-    right: 0;
+    transform: translateX(0);
   }
 
   .nav-menu li {

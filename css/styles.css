@@ -1805,7 +1805,12 @@ p {
     right: 0;
   }
 
+  .nav-menu li {
+    width: 100%;
+  }
+
   .nav-link {
+    display: block;
     width: 100%;
     padding: var(--space-md);
     font-size: var(--fs-base);

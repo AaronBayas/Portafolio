@@ -835,9 +835,23 @@ p {
   color: var(--color-text-muted);
 }
 
+.skill-item__level-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
 .skill-item__level {
   display: flex;
   gap: 3px;
+}
+
+.skill-item__percentage {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  font-weight: var(--fw-medium);
+  min-width: 2.2rem;
+  text-align: right;
 }
 
 .skill-item__dot {

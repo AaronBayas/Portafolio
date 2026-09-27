@@ -21,6 +21,40 @@ Este portafolio web ha sido desarrollado como proyecto académico para la asigna
 
 ---
 
+## Capturas del Proyecto
+
+<details>
+  <summary><b>Haz clic aquí para ver las capturas de pantalla</b></summary>
+  <br>
+  
+  ### 1. Inicio
+  <p align="center">
+    <img src="media/captura-inicio.png" alt="Pantalla de inicio">
+  </p>
+  
+  ### 2. Sobre Mí
+  <p align="center">
+    <img src="media/captura-sobre-mi.png" alt="Sección Sobre Mí">
+  </p>
+  
+  ### 3. Habilidades
+  <p align="center">
+    <img src="media/captura-habilidades.png" alt="Sección de Habilidades">
+  </p>
+  
+  ### 4. Proyectos Destacados
+  <p align="center">
+    <img src="media/captura-proyectos.png" alt="Sección de Proyectos">
+  </p>
+  
+  ### 5. Contacto
+  <p align="center">
+    <img src="media/captura-contacto.png" alt="Sección de Contacto">
+  </p>
+</details>
+
+---
+
 ## Tecnologías Utilizadas
 
 | Tecnología | Implementación |

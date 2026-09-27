@@ -225,6 +225,7 @@ p {
   font-size: var(--fs-base);
   line-height: var(--lh-relaxed);
   color: var(--color-text-muted);
+  text-align: justify;
 }
 
 .text-muted {
